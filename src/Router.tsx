@@ -5,6 +5,7 @@ import SignUp from "./routes/SignUp";
 import Layout from "@/components/layout"
 import About from "./routes/About";
 import ProtectedRoute from "@/components/protected-route";
+import PostForm from "@/routes/post-form";
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,12 @@ const router = createBrowserRouter([
             }, {
                 path: '/about',
                 element: <About/>
-            }
+            },
+            {
+                path: '/postform',
+                element: <PostForm/>
+            },
+            
         ]
         
     },

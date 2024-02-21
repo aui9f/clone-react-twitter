@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    color: #747474;
   }
   body {
     font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -35,6 +36,13 @@ const GlobalStyles = createGlobalStyle`
   font-size: 1rem;
 }
 
+a{
+  color: #747474;
+  &:link{
+    text-decoration: none;
+  }
+}
+
 hr {
    display:block;
    height:1px;
@@ -50,6 +58,14 @@ input, button{
   padding: 0 8px;
   border: 1px solid #ABABAB;
   border-radius: 4px;
+}
+textarea{
+  border: 1px solid #ABABAB;
+  border-radius: 4px;
+  padding: 8px;
+  &:focus {
+    outline: none;
+  }
 }
 button{
   cursor: pointer;
